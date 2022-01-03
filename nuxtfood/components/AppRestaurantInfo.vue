@@ -8,18 +8,20 @@
         <span>Free Delivery</span>
       </p>
       <div class="row">
+        <!-- 网格布局 -->
         <div
           v-for="menuitem in store.menu"
           :key="menuitem.id"
           :style="`background: url(/${menuitem.img}) no-repeat center center`"
           class="items"
         >
+          <!-- 子绝父相 -->
           <div class="iteminfo">
             <div>
               <h4>{{ menuitem.item }}</h4>
               <p>{{ priceFormatting(menuitem.price) }}</p>
             </div>
-            <nuxt-link :to="`item/${menuitem.id}`">
+            <nuxt-link :to="`items/${menuitem.id}`">
               <button class="ghost">View Item ></button>
             </nuxt-link>
           </div>

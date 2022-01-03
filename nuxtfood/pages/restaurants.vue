@@ -5,7 +5,7 @@
       <p>Choose a cuisine:</p>
       <select v-model="choosed">
         <option value="">--Please choose--</option>
-        <option v-for="item in fliterlist" :key="item" :value="item">
+        <option v-for="item in fliterlist" :key="item">
           {{ item }}
         </option>
       </select>

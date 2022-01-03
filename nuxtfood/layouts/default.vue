@@ -5,6 +5,7 @@
       <Nuxt />
     </div>
     <!-- sticky footer goes here -->
+    <footer>MIT</footer>
   </div>
 </template>
 
